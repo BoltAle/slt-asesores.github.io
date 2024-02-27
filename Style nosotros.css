@@ -1,0 +1,290 @@
+/***** Paleta de colores base *****
+
+color verde: #50c5ab
+Color oscuro: #282f40
+Color texto: #7e89a3
+Color claro: #d7dbe6
+Color gris: #f6f6f8
+
+*/
+
+/**** Medidas em ****
+16px = 1.0625em
+29px = 1.8125em
+
+/
+
+                                /**** Estilos generales ****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    color: #7e89a3;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px;
+    margin: 0;
+}
+p{
+    margin-bottom: 29px;
+}
+a{
+    text-decoration: none;
+    color: #50c5ab;
+    transition: all .3s linear;
+}
+a:hover{
+    text-decoration: underline;
+    color: #282f40;
+}
+                                /**** Estilos generales ****/
+
+
+
+                                /* Formulario y botonoes */
+input {
+    padding: 1em 2em;
+    border: 0.0625em solid #d7dbe6;
+    background: #f6f6f8;
+    border-radius: 0.2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background: #50c5ab;
+    color: white;
+    border-radius: 5em;
+    border: 0.0625em solid #50c5ab;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
+}
+.btn:hover {
+    background: #282f40;
+    color: white;
+    
+}
+.btn-alt {
+    color: #7e89a3;
+    border: 0.0625em solid #7e89a3;
+    background: transparent;
+}
+.btn-alt:hover {
+    background: #f6f6f8;
+    color: #282f40;
+}
+                                /*** Formulario ***/
+
+
+
+                                /*** layout ***/
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}   
+
+.container.page-content {
+    max-width: 46rem;
+}
+
+                                /*** layout ***/
+
+
+
+                                /**** Encabezados ****/
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #282f40;
+    margin-bottom: 29px;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #50c5ab;
+    margin-bottom: 29px;
+}
+h1,h2,h3{
+    margin: 0 0 1em 0;
+}
+                                /**** Encabezados ****/
+
+
+
+                                /**** Elementos pagina ****/
+blockquote {
+    font-size: 20px;
+    margin: 29px 0;
+    padding: 2em;
+    background: #7e89a3;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.2em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.alignrigth {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.aligncenter {
+    display: block;
+    margin: 1em auto;
+}
+.ancho100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+                                /**** Elementos ****/
+
+
+
+                                /**** Pagina ****/
+.page-header {
+    background: #7e89a3;
+    color: white;
+    text-align: center;
+    padding: 3em;
+}
+    .page-header p {
+        font-size: 1.3em;
+        line-height: 29px;
+        margin: 0;
+    }
+
+.page-header h1 {
+    margin-bottom: 0.5em;
+}
+                                /**** Pagina ****/
+
+
+                                /**** Pie de pagina ****/
+
+#footer-call-to-action {
+    background: #282f40;
+    padding: 2em 0;
+    color: white;   
+}
+.footer-call-to-action-content p {
+    margin: 0;
+}
+#main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-footer li {
+    list-style: none;
+    margin-right: 1em;
+}
+.menu-footer ul li {
+    display: inline-block;
+}
+.copyright {
+    text-align: center;
+    padding: 1em 0;
+}
+.copyright p {
+    margin: 0;
+}
+
+                                /**** Pie de pagina ****/
+
+
+                                /**** Contenido de la pagina ****/
+
+
+.mayor-informacion {
+    margin: 1em 5em;
+    padding: 2em;
+}
+
+
+                                /**** Contenido de la pagina ****/
+                                /**** Media ****/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .mayor-informacion {
+        margin: 1em 1em;
+        padding: 2em;
+    }
+    .page-header {
+        padding: 1em;
+    }
+    .page-header h1 {
+        font-size: 1.5em;
+    }
+    .page-header p {
+        font-size: 1em;
+    }
+    .menu-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-footer li {
+        margin: 0.5em 0;
+    }
+    .menu-footer li:last-child {
+        margin-bottom: 0;
+    }
+    .menu-footer ul li {
+        display: block;
+    }
+    .menu-footer ul li a {
+        font-size: 1em;
+    }
+    .menu-footer ul li a:hover {
+        text-decoration: none;
+    }
+    .menu-footer ul li a:active {
+        text-decoration: none;
+    }
+    .menu-footer ul li a:visited {
+        text-decoration: none;
+    }
+    .menu-footer ul li a:focus {
+        text-decoration: none;
+    }
+    .menu-footer ul li a:link {
+        text-decoration: none;
+    }
+    .menu-footer ul li a {
+        text-decoration: none;
+    }
+    .menu-footer ul li a {
+        text-decoration: none;
+    }
+    .menu-footer ul li a {
+        text-decoration: none
+    }
+    
+}
+
+                                /**** Media ****/
